@@ -1,0 +1,17 @@
+@import '../../styles/base.scss';
+@import '../../styles/style.scss';
+
+.imgItem {
+  float: left;
+  width: 35%;
+  height: 100%;
+  margin-bottom: $space + 10px;
+  background: no-repeat 50% 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $textColor;
+  font-size: 100px;
+  cursor: pointer;
+  @extend .trans;
+}

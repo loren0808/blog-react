@@ -1,0 +1,104 @@
+@import '../../../../styles/base.scss';
+@import '../../../../styles/style.scss';
+
+.tagBase {
+  padding: 0 10px;
+  border-radius: 10px;
+  color: #000000;
+  height: 30px;
+  font-size: 14px;
+  @extend .hover;
+}
+
+.card {
+  // 设置光标类型
+  cursor: pointer;
+  height: 150px;
+  box-sizing: content-box;
+  border-right: 5px solid rgba($color: #fff, $alpha: 0);
+  box-shadow: 0 3px 8px 6px rgba(7,17,27,0.05);
+  .title {
+
+    height: 30px;
+    overflow: hidden;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+    font-size: 22px;
+    font-weight: 700;
+    color: $hoverColor;
+    margin-bottom: 5px;
+  }
+
+  .content {
+    margin: 0 2% 0% 37%;
+    line-height: 20px;
+    height: 80px;
+    // text-indent: 2em;
+    color: $textColor3;
+    font-size: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+  .info {
+    position: relative;
+    height: 35px;
+    margin: 0 2% 0% 37%;
+    .date {
+      @extend .tagBase;
+      position: absolute;
+      bottom: 0;
+      text-align: center;
+      line-height: 30px;
+    }
+
+    .tags {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      max-width: 800px;
+      height: 30px;
+
+      .tag {
+        @extend .tagBase;
+        display: inline-block;
+        margin-right: 20px;
+        text-align: center;
+        line-height: 30px;
+      }
+
+      .tag:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.card:hover {
+  cursor: pointer;
+  border-right: 5px solid $hoverColor;
+}
+
+@media screen and (max-width: 1240px) {
+  // .card {
+  //   .title {
+  //     height: 50rem;
+  //     line-height: 24rem;
+  //     font-size: 20rem;
+  //   }
+
+  //   .content {
+  //     height: 72rem;
+  //     text-indent: 2em;
+  //     font-size: 16rem;
+  //   }
+
+  //   .info {
+  //     display: none;
+  //   }
+  // }
+}

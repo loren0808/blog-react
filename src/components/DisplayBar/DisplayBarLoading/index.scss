@@ -1,0 +1,17 @@
+@import '../../../styles/base.scss';
+
+.displayBarLoading {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .bar {
+    height: 18px;
+    width: 90%;
+    background-color: rgba($color: #000, $alpha: 0.2);
+    backdrop-filter: blur(20px);
+  }
+}
+

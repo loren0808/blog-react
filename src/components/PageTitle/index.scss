@@ -1,0 +1,23 @@
+@import '../../styles/base.scss';
+
+.box {
+  color: $textColor;
+  min-height: calc(100vh - #{ $footerHeight * 2});
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  user-select: none;
+  margin: 0 auto;
+  position: relative;
+  .title {
+    font-size: 42px;
+    font-weight: 700;
+    text-shadow: 4px 4px 10px $footerBg;
+  }
+
+  .desc {
+    font-size: 28px;
+  }
+}
+

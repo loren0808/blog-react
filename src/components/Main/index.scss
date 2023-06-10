@@ -1,0 +1,6 @@
+@import '../../styles/base.scss';
+
+.main {
+  min-height: calc(100vh - #{3 * $footerHeight });
+  width: 100%;
+}

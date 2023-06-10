@@ -1,0 +1,20 @@
+@import '../../styles/base.scss';
+@import '../../styles/style.scss';
+
+.card {
+  font-family: 'plantc', serif;
+  margin-bottom: $space;
+  overflow: hidden;
+  user-select: none;
+  color: $textColor;
+  @extend .trans;
+}
+
+.card:nth-child(1) {
+  margin-top: $space;
+}
+
+.middle {
+  margin: 0 auto;
+  max-width: 700px;
+}

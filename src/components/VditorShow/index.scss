@@ -1,0 +1,10 @@
+@import '../../styles/base.scss';
+
+.showArea {
+  max-width: 900px;
+  width: 100%;
+  padding: 40px 50px;
+  min-height: calc(100vh - #{3 * $footerHeight});
+  background-color: #fff;
+}
+

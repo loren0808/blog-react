@@ -1,0 +1,35 @@
+@import '../../styles/base.scss';
+@import '../../styles/style.scss';
+
+.articleInfo {
+  display: inline-block;
+  font-size: 18px;
+  padding: 0 10px;
+  line-height: 40px;
+  margin-right: $space;
+  user-select: none;
+  @extend .hover;
+}
+
+.postTitle {
+  user-select: text;
+  min-height: auto;
+  top: 0 ;
+  height: 200px;
+  .articleClass {
+    @extend .articleInfo;
+  }
+  .articleDate {
+    @extend .articleInfo;
+  }
+}
+
+.layoutCard {
+  margin: auto;
+  width: $layoutWidth;
+  padding: 2 * $space;
+  font-size: 20px;
+  line-height: 1.6em;
+  user-select: text;
+  word-break: break-all;
+}

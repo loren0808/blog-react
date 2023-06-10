@@ -1,0 +1,32 @@
+// size
+$navHeight: 44px;
+$footerHeight: 44px;
+$centerWidth: 994px;
+$layoutWidth: 1000px;
+$btnWidth: 70px;
+
+// 圆角
+$bigRadius: 20px;
+$midRadius: 8px;
+
+// 间距
+$space: 20px;
+
+// 不变的颜色
+$codeOther: #c9d1d9;
+// 按钮/字体高亮/hover
+$hoverColor: var(--hoverColor, rgba(249, 115, 122, 0.8));
+
+// ---------黑色-----------
+// 主色
+$themeColor: var(--themeColor, rgb(12, 29, 27));
+// 字体色
+$textColor: var(--textColor, rgb(255, 255, 255));
+// placeholder
+$tip: var(--tip, rgb(116, 116, 116));
+// App背景色
+$bodyColor: var(--bodyColor, rgb(0, 0, 0));
+// footer透明背景色
+$footerBg: var(--footerBg, rgba(0, 0, 0, 0.3));
+//
+$textColor3: var(--textColor3, rgb(34, 34, 34));
