@@ -1,6 +1,6 @@
 import { Skeleton } from 'antd';
 import classNames from 'classnames';
-import React, { MouseEventHandler } from 'react';
+import React, { MouseEventHandler, PropsWithChildren } from 'react';
 
 import s from './index.scss';
 
@@ -11,7 +11,7 @@ interface Props {
   onClick?: MouseEventHandler<HTMLDivElement>;
 }
 
-const Card: React.FC<Props> = ({ children, className, loading, middle, onClick }) => {
+const Card: React.FC<PropsWithChildren<Props>> = ({ children, className, loading, middle, onClick }) => {
   return (
     <div className={classNames(s.card, { [s.middle]: middle }, className)} onClick={onClick}>
       {loading ? <Skeleton paragraph={{ rows: 1 }} /> : children}

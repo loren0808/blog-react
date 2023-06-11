@@ -1,7 +1,7 @@
 import { useTitle } from 'ahooks';
 import classNames from 'classnames';
 import dayjs from 'dayjs';
-import React from 'react';
+import React, { PropsWithChildren } from 'react';
 
 import { siteTitle } from '@/utils/constant';
 
@@ -21,7 +21,7 @@ interface Props {
   rows?: number;
 }
 
-const Layout: React.FC<Props> = ({
+const Layout: React.FC<PropsWithChildren<Props>> = ({
   title,
   className,
   loading,

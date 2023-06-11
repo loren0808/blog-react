@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import React from 'react';
+import React, { PropsWithChildren } from 'react';
 
 import s from './index.scss';
 
@@ -9,7 +9,7 @@ interface Props {
   className?: string;
 }
 
-const PageTitle: React.FC<Props> = ({ title, desc, className, children }) => {
+const PageTitle: React.FC<PropsWithChildren<Props>> = ({ title, desc, className, children }) => {
   return (
     <div className={classNames(s.box, className)}>
       <div className={s.title}>{title}</div>

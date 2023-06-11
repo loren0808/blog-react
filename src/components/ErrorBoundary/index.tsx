@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { PropsWithChildren } from 'react';
 
-export default class ErrorBoundary extends React.Component {
+export default class ErrorBoundary extends React.Component<PropsWithChildren> {
   state = { hasError: false };
 
   static getDerivedStateFromError() {
