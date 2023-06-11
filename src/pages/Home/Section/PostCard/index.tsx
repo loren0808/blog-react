@@ -12,11 +12,12 @@ interface Props {
   date?: string;
   tags?: any[];
   loading?: boolean;
+  url?: string;
   onClick?: MouseEventHandler<HTMLDivElement>;
 }
 
-const url = 'https://p7.itc.cn/images01/20211123/ca47074f55954f32a596141cc77aeb17.jpeg';
-const PostCard: React.FC<Props> = ({ title, content, date, tags, loading, onClick }) => {
+const defaultUrl = 'https://p7.itc.cn/images01/20211123/ca47074f55954f32a596141cc77aeb17.jpeg';
+const PostCard: React.FC<Props> = ({ title, content, date, tags, loading, url = defaultUrl, onClick }) => {
   return (
     <Card className={s.card} onClick={onClick}>
       {loading ? (

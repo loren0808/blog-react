@@ -8,10 +8,9 @@
   align-items: center;
 
   .bar {
-    height: 18px;
+    height: 22px;
     width: 90%;
-    background-color: rgba($color: #000, $alpha: 0.2);
-    backdrop-filter: blur(20px);
+    background-color: rgba($color: #000, $alpha: 0.1);
   }
 }
 

@@ -7,6 +7,10 @@
   display: flex;
   justify-content: center;
 }
+.homeTitle{
+  min-height: calc(100vh - #{ $footerHeight * 2});
+  user-select: none;
+}
 
 // @media screen and (max-width: 994px) {
 //   .body {

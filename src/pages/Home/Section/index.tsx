@@ -50,17 +50,21 @@ const Section: React.FC<Props> = ({ artSum }) => {
   });
   return (
     <section className={s.section}>
-      {articles[page]?.map(({ _id, title, content, create_at, tag }: theAtc) => (
-        <PostCard
-          key={_id}
-          title={title}
-          content={content.replace(/\s+|[\r\n]|\[.*\]|\(.*\)/g, '')}
-          date={create_at}
-          tags={tag}
-          loading={loading}
-          onClick={() => navigate(`/post?id=${encodeURIComponent(_id)}`)}
-        />
-      ))}
+      {articles[page]?.map(({ _id, title, content, create_at, tag }: theAtc) => {
+        const s = content.match(/\(([http:\/\/|https:\/\/].+)\)/);
+        return (
+          <PostCard
+            key={_id}
+            title={title}
+            content={content.replace(/\s+|[\r\n]|\[.*\]|\(.*\)/g, '')}
+            date={create_at}
+            tags={tag}
+            loading={loading}
+            url={s?.length ? s[1] : undefined}
+            onClick={() => navigate(`/post?id=${encodeURIComponent(_id)}`)}
+          />
+        );
+      })}
       <MyPagination
         current={page}
         defaultPageSize={pageSize}
