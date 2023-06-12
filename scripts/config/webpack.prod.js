@@ -23,6 +23,7 @@ module.exports = merge(common, {
   },
   plugins: [
     // 生产模式使用了MiniCssExtractPlugin.loader，则需要使用MiniCssExtractPlugin
+    // 不使用该插件最后生成的全为js
     new MiniCssExtractPlugin({
       filename: 'css/[name].[contenthash:8].css',
       chunkFilename: 'css/[name].[contenthash:8].chunk.css'

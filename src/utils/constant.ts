@@ -1,5 +1,5 @@
-export const icp_site = 'https://beian.miit.gov.cn/#/Integrated/index';
-export const icp_no = '备案号';
+export const icp_site = 'https://beian.miit.gov.cn';
+export const icp_no = '京ICP备2023014869号-1';
 
 export const blogAdminUrl = 'http://47.113.229.110:3000/';
 
