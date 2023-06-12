@@ -1,7 +1,7 @@
 export const icp_site = 'https://beian.miit.gov.cn';
 export const icp_no = '京ICP备2023014869号-1';
 
-export const blogAdminUrl = 'http://47.113.229.110:3000/';
+export const blogAdminUrl = 'https://yelan.cloud:3000/';
 
 export const siteTitle = '兰生幽谷';
 export const pageSize = 10;
